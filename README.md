@@ -1,16 +1,32 @@
-# Overleaf FISI Toolkit
+# Overleaf Toolkit - Proyecto de Aprendizaje
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Docker](https://img.shields.io/badge/Docker-Required-2496ED?logo=docker)](https://www.docker.com/)
 [![Overleaf](https://img.shields.io/badge/Overleaf-Community%20Edition-47A141)](https://github.com/overleaf/toolkit)
+[![Demo](https://img.shields.io/badge/Demo-flowxy.org-success?logo=latex)](https://flowxy.org)
 
 ## 📚 Sobre Este Proyecto
 
-Este repositorio contiene mi implementación de **Overleaf Community Edition** utilizando el [Overleaf Toolkit oficial](https://github.com/overleaf/toolkit), configurado para uso académico en la **Facultad de Ingeniería de Sistemas e Informática (FISI)** de la **Universidad Nacional Mayor de San Marcos (UNMSM)**.
+Este repositorio contiene mi implementación de **Overleaf Community Edition** utilizando el [Overleaf Toolkit oficial](https://github.com/overleaf/toolkit), configurado para uso académico como estudiante de **Ciencias de la Computación** en la **Facultad de Ingeniería de Sistemas e Informática (FISI)** de la **Universidad Nacional Mayor de San Marcos (UNMSM)**.
+
+> 🌐 **Demo en vivo**: [flowxy.org](https://flowxy.org)
 
 ### Propósito
 
-Este proyecto fue creado como parte de mi proceso de aprendizaje en tecnologías de contenedores (Docker), despliegue de aplicaciones web, y gestión de infraestructura. El objetivo es proporcionar una instancia de Overleaf accesible para estudiantes de FISI que necesiten colaborar en documentos LaTeX para trabajos académicos, artículos científicos, tesis y proyectos formales.
+Este proyecto fue creado como parte de mi proceso de aprendizaje en tecnologías de contenedores (Docker), despliegue de aplicaciones web, y gestión de infraestructura. El objetivo es proporcionar una instancia de Overleaf accesible para estudiantes de FISI-UNMSM que necesiten colaborar en documentos LaTeX para trabajos académicos, artículos científicos, tesis y proyectos formales.
+
+### 🎓 Mi Proceso de Aprendizaje
+
+Como estudiante de **4to ciclo de Ciencias de la Computación**, este proyecto me ha permitido aprender y aplicar:
+
+- **Docker & Contenedores**: Orquestación de servicios múltiples, gestión de volúmenes y redes
+- **Cloudflare Tunnel**: Implementación de túneles seguros sin exponer puertos públicos
+- **Administración de Servidores**: Gestión de infraestructura, monitoreo y mantenimiento
+- **Bases de Datos NoSQL**: Trabajo práctico con MongoDB para almacenamiento de documentos
+- **Redes y DNS**: Configuración de dominios propios (flowxy.org) y routing
+- **DevOps Básico**: Despliegue continuo y gestión de servicios en producción
+
+Este es un proyecto real de aprendizaje aplicado, no solo teórico.
 
 > **Nota Importante**: Este NO es un proyecto original mío. Es una implementación y configuración del [Overleaf Toolkit](https://github.com/overleaf/toolkit) desarrollado por el equipo de Overleaf. Todo el crédito del software base va para ellos.
 
@@ -112,11 +128,11 @@ Si quieres hacer tu instancia accesible desde Internet sin abrir puertos, puedes
 1. **Instala cloudflared** en tu servidor (ver [documentación](doc/cloudflare-tunnel-setup.md))
 2. **Configura las variables de entorno** en `config/variables.env`:
 
-   ```env
-   OVERLEAF_SITE_URL=https://tu-dominio.com
-   OVERLEAF_BEHIND_PROXY=true
-   OVERLEAF_SECURE_COOKIE=true
-   ```
+    ```env
+    OVERLEAF_SITE_URL=https://tu-dominio.com
+    OVERLEAF_BEHIND_PROXY=true
+    OVERLEAF_SECURE_COOKIE=true
+    ```
 
 3. **Sigue la guía completa** en [`doc/cloudflare-tunnel-setup.md`](doc/cloudflare-tunnel-setup.md)
 
@@ -124,9 +140,9 @@ Si quieres hacer tu instancia accesible desde Internet sin abrir puertos, puedes
 
 ## 📖 Documentación
 
-- [`doc/quick-start-guide.md`](doc/quick-start-guide.md) - Guía rápida oficial
-- [`doc/configuration.md`](doc/configuration.md) - Opciones de configuración
-- [`doc/cloudflare-tunnel-setup.md`](doc/cloudflare-tunnel-setup.md) - Setup de Cloudflare Tunnel
+- [Guía de inicio rápido](doc/quick-start-guide.md)
+- [Opciones de configuración](doc/configuration.md)
+- [Configuración de Cloudflare Tunnel](doc/cloudflare-tunnel-setup.md)
 - [Overleaf Wiki](https://github.com/overleaf/overleaf/wiki) - Documentación oficial completa
 
 ## 🔧 Comandos Útiles
@@ -230,7 +246,7 @@ Ver [LICENSE](LICENSE) para el texto completo.
 
 - **[Overleaf Team](https://www.overleaf.com)** - Por crear y mantener este excelente software open source
 - **[Overleaf Toolkit](https://github.com/overleaf/toolkit)** - Por proporcionar las herramientas de despliegue
-- **FISI - UNMSM** - Por el ambiente académico que motiva este tipo de proyectos
+- **UNMSM** - Por el ambiente académico que motiva este tipo de proyectos
 - **Comunidad de LaTeX** - Por el ecosistema de herramientas
 
 ## 🔗 Enlaces Relacionados
@@ -239,19 +255,19 @@ Ver [LICENSE](LICENSE) para el texto completo.
 - [Overleaf GitHub](https://github.com/overleaf)
 - [Overleaf Wiki](https://github.com/overleaf/overleaf/wiki)
 - [LaTeX Project](https://www.latex-project.org/)
-- [FISI - UNMSM](https://sistemas.unmsm.edu.pe)
+- [UNMSM](https://www.unmsm.edu.pe)
 - [Cloudflare Tunnel Docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/)
 
 ## 📧 Contacto
 
 **Diego Sotelo**  
-Estudiante de Ingeniería de Sistemas - FISI UNMSM  
+Estudiante de Ciencias de la Computación - FISI, UNMSM  
 Email: <diego.sotelo@unmsm.edu.pe>
 
 ---
 
 <p align="center">
   <i>Proyecto académico desarrollado con fines educativos</i><br>
-  <i>FISI - Universidad Nacional Mayor de San Marcos</i><br>
+  <i>Facultad de Ingeniería de Sistemas e Informática - UNMSM</i><br>
   <i>2025</i>
 </p>

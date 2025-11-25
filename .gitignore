@@ -6,6 +6,14 @@ tmp/
 
 config/**/*
 !config/.gitkeep
+!config/variables.env.example
 
 data/**/*
 !data/.gitkeep
+
+# Cloudflare Tunnel credentials (never commit these!)
+.cloudflared/
+*.json
+*.pem
+*.crt
+*.key
